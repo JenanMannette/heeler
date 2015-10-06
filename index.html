@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="mapsApp">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Heeler</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100|Righteous' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-controller="MapCtrl">
+    <nav>
+        <h1>Heeler.</h1>
+        <a href="howTo" ng-click="showHowTo()">How To</a>
+        <a href="about" ng-click="showAbout()">About</a>
+    </nav>
+
+    <!--<button ng-show="true">Track! Change to "Done Tracking" if ng-show is false</button>-->
+    <!--//on click turn on arduino-->
+
+    <div ng-show="howTo = 1" class="info">
+        <ul>
+            <ol>
+                <li>Connect collar to device (RNBT-9A55)</li>
+                <li>If it requires a code, type in 1234</li>
+                <li>Connect and see your map update!</li>
+            </ol>
+        </ul>
+    </div>
+
+    <div ng-show="about > 0" class="info">
+        <p>This collar was created with my dog Stitch in mind.</p>
+        <p><img src="images/stitch.jpg" alt="Stitch Dog" class="stitch"/></p>
+
+        <p>He is a 3 year old Red Heeler/Cattle Dog Mix that loves his squirrels.
+        One fantastic part about living in Boulder, Colorado is the dog-friendly town. Boulder has implemented a Voice and Sight tag program to allow dogs to be offleash in certain areas. When voice and sight aren't enough, I developed a solution for the case where dogs get away from you.
+        </p>
+        <p>
+            I created the Heeler collar. This collar is able to track where your furry friend is based on GPS location. These coordinates are sent to the device that you synced up over Bluetooth. Open up the application, and you can see where your pet has scurried off to!
+        </p>
+    </div>
+
+    <div ng-view></div>
+
+
+    <script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>-->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+</body>
+</html>

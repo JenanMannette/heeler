@@ -1,0 +1,78 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font: bold 12px Arial;
+    background: url('../images/bg3.jpg') no-repeat;
+    background-size: cover;
+
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    display: inline;
+    color: white;
+}
+
+a {
+    color: #FBDDAD;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    float: right;
+}
+
+a:hover {
+    color: #6D454C;
+    text-decoration: none;
+}
+
+nav {
+    border: 1px solid white;
+    margin-bottom: 30px;
+    background-color: rgba(36, 138, 114, 0.5);
+    padding: 20px;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+}
+
+#map {
+     height: 500px;
+     width: 90%;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+#repeat{
+    display: inline;
+}
+
+.info {
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid darkgrey;
+    background-color: rgba(221,216,196,.7);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.stitch {
+    height: 200px;
+}
